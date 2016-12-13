@@ -1,0 +1,3 @@
+lag_database_homepage:
+    path:     /
+    defaults: { _controller: LAGDatabaseBundle:Default:index }

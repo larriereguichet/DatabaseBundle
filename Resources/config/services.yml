@@ -1,0 +1,5 @@
+services:
+    lag.database.mailer:
+        class: LAG\DatabaseBundle\Mail\Mailer
+        arguments:
+            - '@mailer'
