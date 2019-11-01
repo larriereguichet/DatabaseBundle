@@ -1,0 +1,5 @@
+imports:
+    resource: 'services/*'
+
+parameters:
+    lag.database.mysql.dsn: '%env(DATABASE_URL)%'

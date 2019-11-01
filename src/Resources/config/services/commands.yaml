@@ -1,0 +1,14 @@
+services:
+    LAG\DatabaseBundle\Command\BackupCommand:
+        arguments:
+            - '@LAG\DatabaseBundle\Helper\BackupHelper'
+            - '@backup_manager'
+        tags:
+            - {name: console.command}
+
+    LAG\DatabaseBundle\Command\RestoreCommand:
+        arguments:
+            - '@LAG\DatabaseBundle\Helper\BackupHelper'
+            - '@backup_manager'
+        tags:
+            - {name: console.command}

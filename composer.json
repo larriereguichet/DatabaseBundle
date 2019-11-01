@@ -1,0 +1,34 @@
+{
+    "name": "larriereguichet/database-bundle",
+    "description": "Backup databases. Wraps the BackupManager library and bundles to be easier to use.",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.2",
+        "backup-manager/symfony": "^2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "johnkrovitch",
+            "email": "arnaudfrezet@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "LAG\\DatabaseBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LAG\\DatabaseBundle\\Tests\\": "tests/DatabaseBundle/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "require-dev": {
+        "symfony/test-pack": "^1.0"
+    }
+}
