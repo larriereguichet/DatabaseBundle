@@ -1,0 +1,8 @@
+services:
+    LAG\DatabaseBundle\Helper\BackupHelper:
+        arguments:
+            $environment: '%env(APP_ENV)%'
+            $filenamePattern: '%lag.database.filename_pattern%'
+            $searchPattern: '%lag.database.search_pattern%'
+            $dateFormat: '%lag.database.date_format%'
+            $configurationStorage: '@backup_manager.config_storage'
